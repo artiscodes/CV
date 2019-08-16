@@ -1,3 +1,11 @@
-<p>
-  header works!
-</p>
+<div class="main-header">
+  <div class="content-header">
+    Artur Raczek
+
+    <div class="languages" [style.marginRight.px]="router.url.indexOf('/projects') && windowWidth > 650 ? 20 : 80">
+            <label *ngFor = "let language of lang.languages; let i = index" class="language" (click)="lang.change_lang(language)">
+                <input type="radio" ng-model="color.name" value="{{language}}" name="language" class="font" checked ><p>{{language}}</p>
+            </label>
+    </div>
+  </div>
+</div>

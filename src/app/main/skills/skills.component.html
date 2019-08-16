@@ -1,0 +1,7 @@
+<div class= "main">
+  <div class= "skill" *ngFor= "let skill of numberOfSkills">
+   <div class="title">{{skill.name}}</div>
+    <div class="rate" *ngFor= "let rate of ' '.repeat(skill.rate).split('')"></div>
+    <div class="rate_empty" *ngFor= "let rate of ' '.repeat(5 - skill.rate).split('')"></div>
+  </div>
+</div>

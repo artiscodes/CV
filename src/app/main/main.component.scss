@@ -1,0 +1,162 @@
+@import '../../styles/common-styles';
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    clear: both;
+    padding-left: 200px;
+    .content-main {
+        position: relative;
+        // font-family: 'Montserrat', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+        margin-right: 5%;
+        margin-bottom: 20px;
+        .person {
+            width: 46%;
+            height: auto;
+            float: left;
+            margin: 2%;
+            @media (max-width: 700px) {
+                width: 96%;
+            }
+        }
+        .education {
+            width: 46%;
+            height: auto;
+            float: left;
+            margin: 2%;
+            @media (max-width: 700px) {
+                width: 96%;
+            }
+        }
+        // h2 {
+        //     font-size: 22px;
+        //     text-align: center;
+        //     color: $text-color-second;
+        // }
+        // h2:after {
+        //     height: 2px;
+        //     width: 32px;
+        //     background-color: $underline-title;
+        //     content: "";
+        //     margin: 10px auto;
+        //     display: table;
+        // }
+        // nav-bar top position
+        @media (min-width: 600px) {
+        // @media (max-width: 900px) and (min-width: 600px) {
+            margin-right: 0%;
+            margin-left: 0%;}
+            @media (max-width: 600px) {
+                margin-right: 0%;
+            }
+    }
+    // nav-bar top position
+    @media (min-width: 600px) {
+        padding: 0px 40px;
+        width: auto;
+    // @media (max-width: 900px) and (min-width: 600px) {
+        // padding-left: 0px;
+        
+    }
+    @media (max-width: 600px) {
+        padding-left: 0px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+.nav-bar {
+    width: 200px;
+    float: left;
+    position: fixed;
+    display: flex;
+    margin-top: 20px;
+    z-index: 2;
+    // nav-bar top position
+    @media (min-width: 650px) {
+    // @media (max-width: 900px) and (min-width: 600px) {
+        // left: 0px; // nav-bar left side position
+        width: 100%;
+        display: block;
+        margin-top: 0px;
+        top: 102px;
+        background-color: $black;
+        max-width: 1366px;
+    }
+    @media (max-width: 650px) {
+        display: none;
+        right: 0px;
+        margin-top: 0px;
+        z-index: 3;
+        background: rgba($navbar-background, .88);
+    }
+    
+
+}
+
+.content {
+    position: relative;
+    padding-top: 100px;
+    display: flex;
+    // nav-bar top position
+    @media (min-width: 650px) {
+    // @media (max-width: 900px) and (min-width: 600px) {
+        display: block;
+        padding-top: 150px;
+    }
+    @media (max-width: 650px) {
+        padding-top: 70px;
+    }
+}
+
+input[type=checkbox]:checked~ .nav-bar {
+    display: inline;
+}
+input {
+    position: fixed;
+    right: 5%;
+    top: -70px
+}
+
+.nav-bar-btn {
+    -webkit-tap-highlight-color: transparent;
+    position: fixed;
+    right: 5%;
+    top: 30px;
+    float: right;
+    display: flex;
+    z-index: 3;
+    cursor: pointer;
+    @media (max-width: 650px) {
+        top: 15px;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+        img {
+            width: 80%;
+            height: 100%;
+        }
+    }
+    @media (min-width: 650px) {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+.offert, .purpose {
+    h2 {color: $text-color-second;}
+    clear: both;
+    font-size: 22px;
+    font-family: 'Open Sans', sans-serif;
+    p {
+        width: 96%;
+        margin: 0 auto;
+    }
+}

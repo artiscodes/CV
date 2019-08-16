@@ -1,0 +1,18 @@
+<div class="main" style="min-height: 500px; padding-top: 72px">
+  <div class="project-title" *ngIf="projects.projects_list[0]?.description">
+      <h2>{{this.projects.projects_list[projectId - 1].name}}</h2><br>
+      {{this.projects.projects_list[projectId - 1].description | translate}}
+  </div>
+  <div class="project-content" *ngIf="projects.projects_list[projectId - 1]?.slides">
+      <div class="img" *ngFor="let slide of slides let i = index" >
+          <img src="/../assets/projects/id_{{projectId}}/Slajd{{i + 1}}.JPG" alt="projects.projects_list[projectId - 1].name" >
+      </div>
+  </div>
+  <div class="project-link" *ngIf="projects.projects_list[projectId - 1]?.link">
+        <p>{{'project-link' | translate}}:</p>
+        <a target="_blank" href="{{projects.projects_list[projectId - 1].link}}" rel="noopener, noreferrer">Schneider ODACE</a>
+  </div>
+  <div class="back-button-pos" [style.right.px]="windowWidth > 1366 ? btnBackMargin : '25'">
+    <button class="back-button" routerLink=""></button>
+  </div>
+</div>

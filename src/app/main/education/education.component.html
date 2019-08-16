@@ -1,0 +1,10 @@
+<div class="content">
+    <div class="university" *ngFor="let school of education.school_list">
+        <p class="period">{{school.period}}</p>
+        <p class="degree">{{school.university | translate}}</p>
+        <p class="description"><span style="font-weight: bold;">{{'faculty of study' | translate}}:</span> {{school.faculty | translate}}<br>
+            <span style="font-weight: bold;">{{'field of specialization' | translate}}:</span> {{school.specialization | translate}}</p>
+    </div>
+
+
+</div>

@@ -1,3 +1,11 @@
-<p>
-  menu works!
-</p>
+<div class="menu">
+  <div class="content">
+      <ul >
+          <li *ngFor = "let items of menu_items; let i = index" class="underline-slide" (click)="onSelect(i)">
+            {{items | translate}}
+
+          </li>
+      </ul>
+  </div>
+</div>
+<!-- routerLink= "login" -->

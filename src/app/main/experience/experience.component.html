@@ -1,0 +1,24 @@
+<div class="content">
+    <div class="experience" *ngFor="let exp of experience.company_list; let i = index">
+        <h4>{{exp.company}} [{{exp.period}}]</h4>
+        <h3>{{exp.position | translate}}</h3>
+        <div class = "responsibility">
+        <p>{{'responsibility included' | translate}}:</p>
+        <ul>
+            <li *ngFor = "let responsibility of experience.company_list[i].responsibility">
+              {{responsibility | translate}}
+         
+            </li>
+        </ul>
+        </div>
+        <div class = "projects">  
+        <p>{{'projects' | translate}}:</p>
+        <ul>
+            <li *ngFor = "let projects of experience.company_list[i].projects">
+              {{projects | translate}}
+          
+            </li>
+        </ul>
+        </div>  
+    </div>
+</div>

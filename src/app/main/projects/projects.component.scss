@@ -1,0 +1,79 @@
+@import '../../../styles/common-styles';
+.content {
+    width: 100%;
+    .project {
+        width: 46%;
+        margin: 0 2%;
+        float: left;
+        cursor: pointer;
+        @media (max-width: 650px) {
+            margin-bottom: 20px;
+            width: 96%;
+        }
+        .title {
+            width: 96%;
+            height: auto;
+            // background-size: cover;
+            // background-image: url("/../assets/image/excel_1.jpg");
+            float: left;
+            margin: 0 2%;
+            margin-bottom: 20px;
+            overflow: hidden;
+            font-weight: bold;
+            text-align: center;
+            h4 {font-size: 21px;
+                @media (max-width: 1280px) {
+                    height: 44px;
+                    max-height: 44px;
+                    @media (max-width: 720px) {
+                        height: unset;
+                        max-height: unset;
+                }
+            }}
+            @media (max-width: 650px) {
+                font-size: 18px;
+                margin-bottom: 0px;
+                h4 {margin-top: 0px;}
+                p {margin-bottom: 10px; margin-top: 10px;}
+            }
+            .img {            
+                width: 100%;
+                height: auto;
+                max-height: 30vw;
+                overflow: hidden;
+                @media (max-width: 650px) {
+                    max-height: 60vw;
+                }
+                &:hover img {
+                    animation: show 5s ease-in;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                    
+                    
+                    // background-size: cover;
+                    // background-image: url("/../assets/image/excel_1.jpg")
+
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes show {
+    0%   { transform: scale(1) }
+    100% { transform: scale(1.5) }
+  }
+  @-moz-keyframes show {
+    0%   { transform: scale(1) }
+    100% { transform: scale(1.5) }
+  }
+  @-o-keyframes show {
+    0%   { transform: scale(1) }
+    100% { transform: scale(1.5) }
+  }
+  @keyframes show {
+    0%   { transform: scale(1) }
+    100% { transform: scale(1.5) }
+  }

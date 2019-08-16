@@ -1,0 +1,89 @@
+@import '../../../styles/common-styles';
+.project-content {
+    width: 100%;
+    // margin: 0 2%;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+
+    @media (max-width: 600px) {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .img {            
+        width: 96%;
+        height: auto;
+        // max-height: 30vw;
+        overflow: hidden;
+        // margin: 2% 2%;
+        margin: 2% auto;
+        // float: left;
+        max-width: 1000px;
+        @media (max-width: 600px) {
+            // max-height: 60vw;
+        }
+        // &:hover img {
+        //     // animation: show 5s ease-in;
+        // }
+        img {
+            width: 100%;
+            height: auto;
+            
+            
+            // background-size: cover;
+            // background-image: url("/../assets/image/excel_1.jpg")
+
+        }
+    }
+}
+.project-title {
+    width: 96%;
+    height: auto;
+    // background-size: cover;
+    // background-image: url("/../assets/image/excel_1.jpg");
+    // float: left;
+    // margin: 0 2%;
+    margin: 2% auto ;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding-top: 40px;
+    font-size: 20px;
+    max-width: 800px;
+    font-family: 'Open Sans', sans-serif;
+    @media (max-width: 600px) {
+        font-size: 16px;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+.main {
+    padding-top: 72px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.project-link {
+    text-align: center;
+    width: 96%;
+    height: auto;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    a {
+        text-decoration: none;
+        text-decoration: underline;
+        color: $black;
+        font-weight: bold;
+
+    }
+
+}
+.back-button-pos {
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 2;
+    @media (max-width: 600px) {
+        top: 15px;
+    }
+}

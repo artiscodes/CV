@@ -1,0 +1,19 @@
+@import '../styles/common-styles';
+
+.scroll-up {
+    -webkit-tap-highlight-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 100%;
+    background-color: $black;
+    border: 2px solid $text-color-main;
+    background-image: url("/../assets/icons/arrow-up.svg");
+    background-position: center;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.5);
+
+}

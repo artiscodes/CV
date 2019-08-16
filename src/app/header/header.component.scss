@@ -1,0 +1,81 @@
+@import '../../styles/common-styles';
+.main-header {
+    position: fixed;
+    width: 100%;
+    max-width: 1366px;
+    height: 100px;
+    border-bottom: 2px solid $black;
+    background-color: $black;
+    // background: rgba(0,0,0, .88);
+    z-index: 2;
+    @media (max-width: 650px) {
+        height: 70px;
+    }
+    .content-header{
+        position: relative;
+        // font-family: 'Rubik Mono One', sans-serif;
+        // font-family: 'Alex Brush', sans-serif;
+        // font-family: 'Akronim', sans-serif;
+        // font-family: 'Devonshire', sans-serif;
+        // font-family: 'Kaushan Script', sans-serif;
+        font-family: 'Marck Script', sans-serif;
+        // font-family: 'Srisakdi', sans-serif;
+        // font-family: 'Rye', sans-serif;
+        // font-family: 'Qwigley', sans-serif;
+        font-size: 35px;
+        line-height: 100px;
+        width: fit-content;
+        margin-left: 100px;
+        height: 100%;
+        display: initial;
+        color: $text-color-main;
+        @media (max-width: 650px) {
+            margin-left: 20px;
+            font-size: 28px;
+            line-height: 70px;
+        }
+        .languages {
+            position: relative;
+            float: right;
+            vertical-align: middle;
+            height: 100%;
+            margin-right: 30px;
+            -webkit-tap-highlight-color: transparent;
+            @media (max-width: 650px) {
+                margin-right: 80px;
+            }
+            .language {
+                -webkit-tap-highlight-color: transparent;
+                position: relative;
+                float: left;
+                height: 40px;
+                width: auto;
+                text-align: center;
+                vertical-align: middle;
+                font-size: 14px;
+                margin: 0px 5px;
+                height: 100%;
+                cursor: pointer;
+                font-weight: normal;
+                font-family: 'Montserrat', sans-serif;
+                input{
+                    position: absolute;
+                    opacity: 0;
+                    left: 20px;
+                }
+                p {
+                margin-top: 0;
+                margin-bottom: 0;
+                }
+                @media (max-width: 650px) {
+
+                }
+            }
+        }
+    }
+   
+}
+input:checked + p {
+    // color: $text-color-showed;
+    font-weight: bold;
+}

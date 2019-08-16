@@ -1,0 +1,15 @@
+<div id="container">
+  <p>{{'contact-content' | translate}}</p>
+  <h1>{{'contact form' | translate}}</h1>
+
+  <form action="/../../form/send.php" method="post" id="contactform">
+      <fieldset>
+          <label><input aria-label="contact form" type="text" name="contact_name" placeholder="{{'first name and surname' | translate}}" required="required" tabindex="0" /></label>
+          <label><input aria-label="contact form" type="email" name="contact_email" placeholder="{{'address e-mail' | translate}}" required="required" tabindex="0" /></label>
+          <textarea aria-label="contact form" rows="5" columns="10" name="contact_body" placeholder="{{'message content' | translate}}" required="required" tabindex="0"></textarea>
+          <span class="check">{{'give the result' | translate}} <span class="form_check_1">{{random1}}</span> &times; <span class="form_check_2">{{random2}}</span> = <label><input type="text" name="contact_check" maxlength="2" tabindex="0" aria-label="contact form"/></label></span> 
+          <label><input aria-label="contact form" type="submit" value="{{'send' | translate}}" tabindex="0" name="send"/></label>
+          <label><input  aria-label="contact form" type="hidden" name="contact_check_data" value="{{random1}}{{random2}}" /></label>
+      </fieldset>
+  </form>
+</div>

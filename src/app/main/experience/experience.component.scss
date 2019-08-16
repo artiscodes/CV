@@ -1,0 +1,41 @@
+@import '../../../styles/common-styles';
+    .content {
+        position: relative;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+        margin: 0 2%;
+        margin-bottom: 20px;
+        .experience {
+            clear: both;
+            h4 {margin-bottom: -10px; font-weight: normal; font-size: 14px;}
+            h3 {margin-bottom: 0px; margin-top: 10px; 
+                // border-bottom: 1px solid grey; width: fit-content;
+                text-decoration: underline;}
+            .responsibility {
+                width: 46%;
+                margin: 2%;
+                float: left;
+                p {font-weight: bold;}
+                @media (max-width: 600px) {
+                    width: 100%;
+                    margin: 0%;
+                }
+            }
+            .projects {
+                width: 46%;
+                margin: 2%;
+                float: left;
+                p {font-weight: bold;}
+                @media (max-width: 600px) {
+                    width: 100%;
+                    margin: 0%;
+                }
+            }
+
+        }
+
+}

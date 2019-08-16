@@ -1,0 +1,53 @@
+@import '../../../styles/common-styles';
+    .content {
+        position: relative;
+        // font-family: 'Montserrat', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+        // margin-right: 10%;
+        margin-bottom: 20px;
+        h2 {
+            font-size: 22px;
+            text-align: center
+        }
+    }
+    .name{
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: bold;
+        
+    }
+    p {margin-top: 10px; font-size: 16px; max-width: 400px; margin: 0 auto;}
+    .img {
+        position: relative;
+        width: 96%;
+        max-height: 300px;
+        height: 200px;
+        overflow: hidden;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("/../assets/image/person.jpg");
+        // /../assets/image/angular_1.jpg
+        // /../assets/icons/angular.svg
+        float: left;
+        margin: 0 2%;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+            height: auto;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1;
+            background-image: url("/../assets/image/person.jpg");
+        }
+    }

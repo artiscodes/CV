@@ -1,3 +1,48 @@
-<p>
-  main works!
-</p>
+<div class="content">
+    <label for="box1" class="nav-bar-btn" aria-label="checkbox">
+      <div class="icon">
+        <img src="assets/icons/menu.svg" alt="menu">
+      </div>
+    </label>
+    <input type="checkbox" id="box1" aria-label="checkbox">
+  <div class="nav-bar">
+    <app-menu></app-menu>
+  </div>
+  <div class="main">
+        <div class="content-main" >
+            <div class= "person" id="0">
+                    <h2>{{'about me' | translate}}</h2>
+                <app-person ></app-person>
+                <h2 id="1">{{'skills' | translate}}</h2>
+                <app-skills ></app-skills>
+            </div>
+            <div class="education" id="2">
+                    <h2>{{'education' | translate}}</h2>
+                <app-education></app-education>
+                <h2>{{'certifications' | translate}}</h2>
+                {{'Completed courses and trainings' | translate}}:
+                <ul>
+                    <li>{{'team managment' | translate}} (10.2016)</li>
+                    <li>{{'project manager' | translate}} (in progress)</li>
+                </ul>
+                <h2>{{'languages' | translate}}</h2>
+                {{'Completed courses and trainings' | translate}}:
+                <ul>
+                    <li>{{'english' | translate}} {{'level' | translate}} B2</li>
+                </ul>
+            </div>
+        </div>
+        <div class="offert" id="3">
+            <h2>{{'experience' | translate}}</h2>
+            <app-experience></app-experience>
+        </div>
+        <div class="offert" id="4">
+            <h2>{{'projects' | translate}}</h2>
+            <app-projects></app-projects>
+        </div>
+        <div class="offert" id="5">
+            <h2>{{'contact' | translate}}</h2>
+            <app-contact-form></app-contact-form>
+        </div>
+  </div>
+</div>

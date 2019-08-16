@@ -1,0 +1,11 @@
+<div class="content">
+  <div class="project" *ngFor="let project of projects.projects_list" (click)="onSelect(project)">
+    <div class="title">
+        <h4>{{project.name}}</h4>
+        <div class="img" >
+            <img src="/../assets/image/{{project.image}}" alt="{{project.image}}" >
+        </div>
+        <p>{{'more' | translate}}...</p>
+    </div>
+  </div>
+</div>

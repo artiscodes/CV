@@ -1,0 +1,39 @@
+@import '../../../styles/common-styles';
+    .content {
+        position: relative;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+        overflow: hidden;
+        height: auto;
+        margin-bottom: 20px;
+        .university {
+            margin-bottom: 25px;
+            .period {
+                font-size: 16px;
+                font-weight: bold;
+                color: $text-color-third;
+                margin: 0px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid grey; width: fit-content;
+            }
+            .degree {
+                font-size: 16px;
+                font-weight: bold;
+                color: $text-color-third;
+                margin: 0px;
+                margin-bottom: 15px;
+
+            }
+            .description {
+                font-size: 16px;
+                font-weight: normal;
+                color: $text-color-third;
+                line-height: 30px;
+                margin: 0px;
+                
+            }
+        }
+
+}

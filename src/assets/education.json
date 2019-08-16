@@ -1,0 +1,11 @@
+[   {"id": 1,
+    "period": "2014-2015", 
+    "university": "The Silesian University of Technology Level of qualification: Master’s Degree", 
+    "faculty": "Automation and Robotics", 
+    "specialization": "Design and automation of machines and processes"},
+{"id": 2, 
+    "period": "2010- 2014", 
+    "university": "The Silesian University of Technology Level of qualification: Engineer Degree", 
+    "faculty": "Automation and Robotics", 
+    "specialization": "Exploitation and devices construction"}
+]

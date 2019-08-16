@@ -16,7 +16,7 @@
     },
     "eofline": true,
     "forin": true,
-    "import-blacklist": [
+    "import-$blacklist": [
       true,
       "rxjs/Rx"
     ],

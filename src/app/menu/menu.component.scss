@@ -1,0 +1,82 @@
+@import '../../styles/common-styles';
+.menu {
+    width: 100%;
+    margin-left: 20px;
+    z-index: 2;
+    @media (max-width: 650px) {
+        margin-left: 0px;
+        }
+    ul {
+        padding-inline-start: 10px;
+        // nav-bar top position
+        @media (min-width: 650px) {
+        // @media (max-width: 900px) and (min-width: 600px) {
+            display: flex;
+            justify-content: space-around;
+            padding-inline-start: 0px;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 650px) {
+            margin: 0px;
+            padding-inline-start: 0px;
+        }
+    }
+    li {
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        line-height: 34px;
+        font-weight: bold;
+        cursor: pointer;
+        width: fit-content;
+        @media (max-width: 650px) {
+            border-bottom: 1px solid $text-color-main;
+            width: 100%;
+            text-align: center;
+            padding-top: 3px;
+            text-transform: uppercase;
+            color: $text-color-main;
+            font-size: 12px;
+            font-weight: 500px;
+            }
+            &:hover{
+                color: $text-color-showed;
+            }
+    }
+    // nav-bar top position
+    @media (min-width: 650px) {
+    // @media (max-width: 900px) and (min-width: 600px) {
+        margin-left: 0px;
+        background-color: $black;
+        color: $text-color-main;
+        }
+
+}
+.underline-slide {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $black;
+      transform-origin: bottom left;
+      transform: scaleX(0);
+      transition: transform 0.5s ease-in-out;
+      // nav-bar top position
+      @media (min-width: 650px) {
+    //   @media (max-width: 900px) and (min-width: 600px) {
+        transform: scaleX(0);
+        background-color:$text-color-showed;
+      }
+      @media (max-width: 650px) {
+        transform: scaleX(0);
+      }
+    }
+    &:hover:before{
+      transform-origin: bottom left;
+      transform: scaleX(1);}
+}

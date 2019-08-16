@@ -1,0 +1,17 @@
+.message {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    min-height: 500px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    @media (min-width: 650px) {
+        display: block;
+        padding-top: 170px;
+    }
+    @media (max-width: 650px) {
+        padding-top: 90px;
+    }
+}

@@ -1,0 +1,87 @@
+@import '../../../styles/common-styles';
+#contactform {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    @media (max-width: 600px) {
+        width: 90%;
+    }
+}
+#contactform fieldset textarea,
+#contactform fieldset input[name=contact_name], 
+#contactform fieldset input[name=contact_email],
+#contactform fieldset input[name=contact_body],
+#contactform fieldset input[name=send] {
+    clear: both;
+    display: block;
+    width: calc(100% - 10px);
+    height: 40px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    &:hover{
+        border: 1px solid $black;
+    }
+    &:focus, :active {
+        color: $black;
+        outline: none;
+    }
+}
+#contactform fieldset textarea {
+    min-height: 100px;
+    padding-top: 5px;
+}
+#contactform fieldset input[name=contact_check] {
+    display: inline-flex;
+    width: 40px;
+    height: 24px;
+    margin-bottom: 5px;
+    vertical-align: middle;
+    font-size: 22px;
+    color: $text-color-third;
+    &:hover{
+        border: 1px solid $black;
+    }
+    &:focus, :active {
+        color: $black;
+        outline: none;
+    }
+}
+
+#contactform fieldset input[name=send] {
+    width: 100px;
+    background-color: $black;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    &:hover{
+        color: gold;
+        font-size: 16px;
+    }
+}
+#container h1 {
+    text-align: center;
+    font-size: 24px;
+    @media (max-width: 600px) {
+        font-size: 20px;
+    }
+}
+#container p {
+    text-align: center;
+    @media (max-width: 600px) {
+        font-size: 20px;
+    }
+}
+.check {
+    display: block;
+    float: left;
+    margin-bottom: 15px;
+    @media (max-width: 600px) {
+        font-size: 16px;
+    }
+}

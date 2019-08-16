@@ -1,0 +1,42 @@
+
+ [  {
+    "_id": {
+        "$oid": "1"
+    },
+    "title": "Purpose",
+    "content_pl": "Cel",
+    "content_en": "Purpose"
+},
+{
+    "_id": {
+        "$oid": "2"
+    },
+    "title": "Offer",
+    "content_pl": "Oferta",
+    "content_en": "Offer"
+},
+{
+    "_id": {
+        "$oid": "3"
+    },
+    "title": "Completed projects",
+    "content_pl": "Zrealizowane projekty",
+    "content_en": "Completed projects"
+},
+{
+    "_id": {
+        "$oid": "4"
+    },
+    "title": "Price list",
+    "content_pl": "Cennik",
+    "content_en": "Price list"
+},
+{
+    "_id": {
+        "$oid": "5"
+    },
+    "title": "Contact",
+    "content_pl": "Skontakuj się z nami",
+    "content_en": "Contact with us"
+}
+ ]
